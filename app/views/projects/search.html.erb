@@ -1,0 +1,7 @@
+<h1>Search</h1>
+<%= form_tag projects_path, method: 'get' do %>
+  <p>
+    <%= text_field_tag :keyword, params[:keyword] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
