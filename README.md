@@ -11,7 +11,7 @@
 get 'search' => 'products#search'
 root 'products#search'
 ```
-6. vi app/controllers/products_controller.rb 加入
+vi app/controllers/products_controller.rb 加入
 ```
 def search
 end
@@ -26,7 +26,7 @@ def index
   end
 end
 ```
-7. vi app/views/search.html.erb
+vi app/views/search.html.erb
 ```
 <h1>Search</h1>
 <%= form_tag projects_path, method: 'get' do %>
@@ -36,7 +36,7 @@ end
   </p>
 <% end %>
 ```
-8. vi app/views/index.html.erb
+vi app/views/index.html.erb
 ```
 <%= "Search Keyword is '#{@keyword}'<br><br>".html_safe unless @keyword.empty? %>
 ```
